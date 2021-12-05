@@ -60,7 +60,6 @@ def solve(s, ints, intsf, lines, pats, pats2, su1, su2):
                     ans1 = n * s
                     win1 = idx
                 if idx > win2:
-                    print(win2, n, s, ans2)
                     ans2 = n * s
                     win2 = idx
 
@@ -70,6 +69,8 @@ def solve(s, ints, intsf, lines, pats, pats2, su1, su2):
 
     su1(ans1)
     su2(ans2)
+
+    print(crt([(1, 2), (4, 5), (10, 13), (1, 101), (3, 61)]))
 
 
 if __name__ == '__main__':
