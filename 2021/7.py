@@ -19,10 +19,7 @@ def solve(s, ints, intsf, lines, pats, pats2, su1, su2):
         return sum(abs(k - j) for j in n)
 
     def c2(k):
-        def t(g):
-            return g*(g+1)/2
-
-        return sum(t(abs(k - j)) for j in n)
+        return sum(abs(k - j)*(1+abs(k - j))/2 for j in n)
 
     ans1 = 10000000000
     for i in range(min(n), max(n)+1):
